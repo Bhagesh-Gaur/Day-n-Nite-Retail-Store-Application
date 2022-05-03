@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>User Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex d-flex form-label mt-4 justify-content-between">
+            <a href="/" style="text-decoration: none">
+            |    <h1 class="me-4">Day n Nite Store</h1>
+            | </a>
+            <form action="/" method="POST" class="d-flex flex mt-2 col-6">
+                <input type="search" name="searchbox" class="form-control px-3" aria-label="searchbox" placeholder="Search Here">
+                <button type="submit" class="ms-1 px-2" value="OK">GO</button>
+            </form><a href="/signin" style="color: black; margin-top: 15px;">#{account[0].LoginID}</a>
+        </div>
+        
+        <nav class="navbar navbar-light bg-light mt-4">
+          <div class="container-fluid">
+            <div class="navbar-brand fs-7 fw-bold text-warning col">Bazzar Coins: #{account[0].Bazaar_Coins}</div>
+              Bootstrap
+            <a class="navbar-brand" href="/claim_coupons">
+              <div class="navbar-brand fs-7 fw-bold text-primary col">Coupons</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/my_order">
+              <div class="navbar-brand fs-7 fw-bold text-info col">My Orders</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/returnCancel">
+              <div class="navbar-brand fs-7 fw-bold text-primary col">Returns/Cancel</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/wishlist">
+              <div class="navbar-brand fs-8 fw-bold text-info col">Wish List</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/cart">
+              <div class="navbar-brand fs-8 fw-bold text-primary col">Cart</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/paymentsO">
+              <div class="navbar-brand fs-7 fw-bold text-info col">Payment Options</div>
+              Bootstrap
+            </a>
+            <a class="navbar-brand" href="/logout">
+              <div class="navbar-brand fs-8 fw-bold text-secondary col">Log Out</div>
+              Bootstrap
+            </a>
+          </div>
+        </nav>
+
+
+
+        <div class="mt-5 row">
+          <div class="fs-5 fw-bold text-danger col">Welcome #{customer[0].Cutomer_Name}!</div>
+          if account[0].Account_Type == 'P'
+            <div class="col-lg-7 py-1 px-0 mx-0 fs-7 fw-bold text-success">Prime</div>
+          else
+            <div class="col-lg-7 py-1 px-0 mx-0 fs-7 fw-bold text-success">Non-Prime</div>
+          <div class="col-lg-2 px-5">#{customer[0].Email_ID}</div>
+        </div>
+
+        <div class="mt-5">
+          <div class="fs-5 fw-bold col d-flex flex">
+            <p class="text">Your Contact Number/s:</p>
+            <a href="/add_number"><button type="submit" class=" ms-4 mb-5 btn btn-outline-success">Add Contact Number</button></a>
+          </div>
+          <div >
+            each val in customer_phone
+              <div class="d-flex flex px-3 justify-content-between mb-2" style="border-bottom: 3px solid grey;">
+                <p class="mt-2">#{val.phone_number}</p>
+                <a href="/Delete_Number/#{val.phone_number}"><button type="submit" class="btn btn-secondary ms-2">Delete</button></a>
+              </div>
+            end
+          </div>
+
+        
+
+
+        <div class="mt-5 row">
+          <div class="fs-5 fw-bold col d-flex flex">
+            <p class="text">Your Address/es:</p>
+            <a href="/add_address"><button type="submit" class=" ms-4 mb-5 btn btn-outline-success">Add Address</button></a>
+          </div>
+          <div>
+            if customer_address.length == 0
+              <div class="mx-5" style="width: 100%;">
+                <p class="text.dark"><span class="fw-bold">None </p>
+              </div>
+            else
+              each val,index in customer_address
+                  <div class="d-flex flex px-3 justify-content-between mb-2" style="border-bottom: 3px solid grey;">
+                      <p class="mt-2">#{val.Street}, #{val.Address_Line}, #{val.City}, #{val.District}, #{val.Country} - #{val.Pincode}</p>
+                      <a href="/Delete_address/#{val.AddressID}"><button type="submit" class="btn btn-secondary ms-2">Delete</button></a>
+                  </div>
+              end
+          </div>
+        </div>
+
+
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
