@@ -27,7 +27,7 @@ The retail store system design incorporates the following identified stakeholder
 ● Net Banking Services, providing payment options to the customer
 
 
-## How run and explore??
+## How run and explore?
 
 ● Firstly, run the sql files present in Database Files in your local host sql server.
 
