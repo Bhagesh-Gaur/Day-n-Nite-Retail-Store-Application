@@ -2,7 +2,7 @@
 
 ##  YouTube Link - *Uploading Soon*. Please visit again. Thanks a lot for your patience.
 
-## ABOUT THE PROJECT
+## About the project
 This project aims to create a database storing all the necessary details for a retail store system, to allow incorporation of data and features seen in larger retail store chains such as Big Bazaar, Blink It and JioMart.
 
 Such retail store systems consist of multiple stores or branches across the country, and each branch receives their products from various suppliers. Storing multiple attributes of products is important for the management of the store structure, finances, and communication of the store with all external stakeholders including customers. Furthermore, storing information about various customers and their purchases allows making the purchases and transactions easier, and allows many more features to the customers, such as availing discounts.
