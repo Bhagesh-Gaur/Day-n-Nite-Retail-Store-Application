@@ -28,13 +28,8 @@ The retail store system design incorporates the following identified stakeholder
 
 
 ## How run and explore?
-
-● Firstly, run the sql files present in Database Files in your local host sql server.
-
-● Then edit the database.js file to add your local host access credentials.
-
-● Open your terminal and check for all dependencies' present in package.json.
-
-● Now, just launch the server in Node JS environment by running index.js file on your terminal.
-
-● Enjoy, the application on your Browser by visiting http://localhost:3000
+    1. Firstly, run the sql files present in Database Files in your local host sql server.
+    2. Then edit the database.js file to add your local host access credentials.
+    3. Open your terminal and check for all dependencies' present in package.json.
+    4. Now, just launch the server in Node JS environment by running index.js file on your terminal.
+    5. Enjoy, the application on your Browser by visiting http://localhost:3000
