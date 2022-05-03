@@ -35,6 +35,6 @@ The retail store system design incorporates the following identified stakeholder
 
 ● Open your terminal and check for all dependencies' present in package.json.
 
-● Now, just launch the server in Node JS environment on your terminal.
+● Now, just launch the server in Node JS environment by running index.js file on your terminal.
 
 ● Enjoy, the application on your Browser by visiting http://localhost:3000
