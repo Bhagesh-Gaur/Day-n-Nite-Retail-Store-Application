@@ -1,4 +1,4 @@
-# Retail-Store-Application
+# Day 'n' Nite: Retail-Store-Application
 
 ##  Code will be added here on 30th April,22. Please visit again. Thanks a lot for your patience.
 
