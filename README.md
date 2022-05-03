@@ -12,6 +12,7 @@ An online interface further allows features such as home delivery, writing revie
 
 Developed full-stack retail store management website was made using HTML, CSS, JavaScript, Bootstrap, Node Js, Express Js, Pug and MySQL. Application has extensive functionalities including wishlist, cart, product based Q&amp;A, delivery track, etc and the database was designed with core DBMS concepts in mind.
 
+
 ## Stakeholders Identified
 The retail store system design incorporates the following identified stakeholders:
 
@@ -24,3 +25,16 @@ The retail store system design incorporates the following identified stakeholder
 ● Delivery Services
 
 ● Net Banking Services, providing payment options to the customer
+
+
+## How run and explore??
+
+● Firstly, run the sql files present in Database Files in your local host sql server.
+
+● Then edit the database.js file to add your local host access credentials.
+
+● Open your terminal and check for all dependencies' present in package.json.
+
+● Now, just launch the server in Node JS environment on your terminal.
+
+● Enjoy, the application on your Browser by visiting http://localhost:3000
